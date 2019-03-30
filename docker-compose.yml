@@ -1,0 +1,14 @@
+version: "3"
+services:
+  angular:
+    image: yomogan/yomogan_test_expressjs
+    ports:
+      - "4200:4200"
+  express:
+    image: yomogan/yomogan_test_angular
+    ports:
+      - "3000:3000"
+  mongo:
+    image: mongo
+    ports:
+      - "27017:27017"
