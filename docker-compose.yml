@@ -8,6 +8,8 @@ services:
     image: yomogan/yomogan_test_angular:test
     ports:
       - "3000:3000"
+    links:
+     - mongo
   mongo:
     image: mongo
     ports:
