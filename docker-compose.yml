@@ -1,11 +1,11 @@
 version: "3"
 services:
   angular:
-    image: yomogan/yomogan_test_angular:test
+    image: yomogan/3_test_expressjs_ghub:latest
     ports:
       - "4200:4200"
   express:
-    image: yomogan/yomogan_test_expressjs:test
+    image: yomogan/3_test_angular_ghub:latest
     ports:
       - "3000:3000"
   mongo:
